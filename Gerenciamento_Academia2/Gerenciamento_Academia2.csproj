@@ -1,0 +1,176 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{519E003B-5FA7-4263-9081-7AE4DDC25009}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>Gerenciamento_Academia2</RootNamespace>
+    <AssemblyName>Gerenciamento_Academia2</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Conexão\Atividade.cs" />
+    <Compile Include="Conexão\AtividadeCad.cs" />
+    <Compile Include="Telas\Tela_Cadastro_Professor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\Tela_Cadastro_Professor.Designer.cs">
+      <DependentUpon>Tela_Cadastro_Professor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Conexão\Aluno.cs" />
+    <Compile Include="Conexão\AlunoCad.cs" />
+    <Compile Include="Conexão\Conexao.cs" />
+    <Compile Include="Conexão\Endereco.cs" />
+    <Compile Include="Conexão\EnderecoCad.cs" />
+    <Compile Include="Conexão\Funcionario.cs" />
+    <Compile Include="Conexão\FuncionarioCad.cs" />
+    <Compile Include="Conexão\Program.cs" />
+    <Compile Include="Conexão\ProfessoresCad.cs" />
+    <Compile Include="Conexão\Professores.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Conexão\Seguranca.cs" />
+    <Compile Include="Telas\Tela_login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\Tela_login.Designer.cs">
+      <DependentUpon>Tela_login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\Tela_Principal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\Tela_Principal.Designer.cs">
+      <DependentUpon>Tela_Principal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\Tela_Cadastro_Aluno.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\Tela_Cadastro_Aluno.Designer.cs">
+      <DependentUpon>Tela_Cadastro_Aluno.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\Tela_Endereco.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\Tela_Endereco.Designer.cs">
+      <DependentUpon>Tela_Endereco.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\Tela_Cadastro_Funcionario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\Tela_Cadastro_Funcionario.Designer.cs">
+      <DependentUpon>Tela_Cadastro_Funcionario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\Tela_Cadastro_Modalidades.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\Tela_Cadastro_Modalidades.Designer.cs">
+      <DependentUpon>Tela_Cadastro_Modalidades.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tela_Cadastro_Usuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tela_Cadastro_Usuario.Designer.cs">
+      <DependentUpon>Tela_Cadastro_Usuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Usuario.cs" />
+    <Compile Include="UsuarioCad.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Telas\Tela_Cadastro_Professor.resx">
+      <DependentUpon>Tela_Cadastro_Professor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\Tela_login.resx">
+      <DependentUpon>Tela_login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\Tela_Principal.resx">
+      <DependentUpon>Tela_Principal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\Tela_Cadastro_Aluno.resx">
+      <DependentUpon>Tela_Cadastro_Aluno.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\Tela_Endereco.resx">
+      <DependentUpon>Tela_Endereco.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\Tela_Cadastro_Funcionario.resx">
+      <DependentUpon>Tela_Cadastro_Funcionario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\Tela_Cadastro_Modalidades.resx">
+      <DependentUpon>Tela_Cadastro_Modalidades.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tela_Cadastro_Usuario.resx">
+      <DependentUpon>Tela_Cadastro_Usuario.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\10755999.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\transferir.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WhatsApp Image 2023-05-01 at 00.00.05.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WhatsApp Image 2023-06-02 at 09.31.01.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dojo-dest--652x640.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WhatsApp Image 2023-06-02 at 09.31.011.jpeg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
